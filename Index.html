@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Form</title>
+</head>
+<body>
+  <h2>Job Application</h2>
+  <form>
+    <!-- Personal Information -->
+    <fieldset>
+      <legend>Personal Information</legend>
+      First Name*: <input type="text" name="first_name"><br>
+      Last Name*: <input type="text" name="last_name"><br>
+      Date of Birth: <input type="date" name="dob"><br>
+      Gender:
+      <input type="radio" name="gender" value="male">Male
+      <input type="radio" name="gender" value="female">Female
+      <input type="radio" name="gender" value="other">Other<br>
+      Profile Picture*: <input type="file" name="profile_picture"><br>
+    </fieldset>
+
+    <!-- Contact Information -->
+    <fieldset>
+      <legend>Contact Information</legend>
+      Email*: <input type="email" name="email"><br>
+      Phone Number*: <input type="text" name="phone" maxlength="10"><br>
+      Address: <textarea name="address"></textarea><br>
+      Country:
+      <select name="country">
+        <option value="India">India</option>
+      </select>
+    </fieldset>
+
+    <!-- Education Background -->
+    <fieldset>
+      <legend>Education Background</legend>
+      Highest Qualification:
+      <select name="qualification">
+        <option value="Graduate">Graduate</option>
+      </select><br>
+      Specialization: <input type="text" name="specialization"><br>
+      Year of Graduation: <input type="text" name="graduation_year"><br>
+    </fieldset>
+
+    <!-- Job Preferences -->
+    <fieldset>
+      <legend>Job Preferences</legend>
+      Preferred Role: <input type="text" name="preferred_role"><br>
+      Expected Salary: <input type="text" name="expected_salary"><br>
+      Preferred Locations:<br>
+      <input type="checkbox" name="location" value="Bangalore">Bangalore
+      <input type="checkbox" name="location" value="Delhi">Delhi
+      <input type="checkbox" name="location" value="Remote">Remote
+      <input type="checkbox" name="location" value="Pune">Pune<br>
+      Willing to Relocate? <input type="checkbox" name="relocate"><br>
+    </fieldset>
+
+    <!-- Create Account -->
+    <fieldset>
+      <legend>Create Account</legend>
+      Password*: <input type="password" name="password"><br>
+      Confirm Password*: <input type="password" name="confirm_password"><br>
+    </fieldset>
+
+    <!-- Resume Upload -->
+    <fieldset>
+      <legend>Resume</legend>
+      Upload Resume (PDF only)*: <input type="file" name="resume" accept="application/pdf"><br>
+    </fieldset>
+
+    <!-- Agreement -->
+    <fieldset>
+      <legend>Agreement</legend>
+      <input type="checkbox" name="terms"> I agree to the terms and conditions*<br>
+    </fieldset>
+
+    <input type="submit" value="Submit Application">
+    <input type="reset" value="Reset Form">
+  </form>
+</body>
+</html>
